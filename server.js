@@ -4,7 +4,6 @@ const express = require('express')
 const methodOverride = require('method-override')
 const mongoose = require('mongoose')
 
-
 // CONFIGURATION
 require('dotenv').config()
 const PORT = process.env.PORT
@@ -51,3 +50,4 @@ app.listen(PORT, () => {
   console.log('listening on port', PORT);
 })
 
+module.exports = app;
